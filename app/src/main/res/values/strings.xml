@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">T1</string>
+    <string name="title_home">首页</string>
+    <string name="title_dashboard">缴费</string>
+    <string name="title_notifications">服务</string>
+    <string name="title_setting">设置</string>
+</resources>
