@@ -11,7 +11,6 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.t1.DBOpenHelper;
 import com.example.t1.MainActivity;
 import com.example.t1.R;
 

@@ -31,6 +31,7 @@
             android:textSize="@dimen/repairsInformation"
             />
         <EditText
+            android:id="@+id/et_userName_pub"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@null"
@@ -54,6 +55,7 @@
             android:textSize="@dimen/repairsInformation"
             />
         <EditText
+            android:id="@+id/et_phoneNumber_pub"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@null"
@@ -76,6 +78,7 @@
             android:textSize="@dimen/repairsInformation"
             />
         <EditText
+            android:id="@+id/et_position_pub"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@null"
@@ -104,6 +107,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"/>
     <EditText
+        android:id="@+id/et_problem_pub"
         android:hint="请详细描述故障的发生地点、情况、现场图片等"
         android:layout_width="match_parent"
         android:layout_height="100dp"
@@ -120,5 +124,6 @@
         android:text="提交"
         android:textColor="#FFFFFF"
         android:background="@color/colorBlue"
+        android:onClick="submitRepairs"
         />
 </LinearLayout>

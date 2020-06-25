@@ -60,10 +60,12 @@
             android:gravity="center"
             android:textSize="@dimen/repairsInformation"
             />
-        <Spinner
-            android:id="@+id/rooms"
+        <EditText
+            android:id="@+id/et_rooms"
             android:layout_width="match_parent"
-            android:layout_height="50dp"/>
+            android:layout_height="50dp"
+            android:background="@null"
+            />
     </LinearLayout>
     <View  android:layout_height="1px"
         android:layout_width="match_parent"
@@ -83,6 +85,7 @@
         android:textSize="@dimen/repairsInformation"
         />
     <EditText
+        android:id="@+id/et_userName"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@null"
@@ -106,6 +109,7 @@
             android:textSize="@dimen/repairsInformation"
             />
         <EditText
+            android:id="@+id/et_phoneNumber"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@null"
@@ -140,7 +144,7 @@
             android:textSize="@dimen/repairsInformation"
             />
         <Spinner
-            android:id="@+id/repairs_types"
+            android:id="@+id/types"
             android:layout_width="match_parent"
             android:layout_height="50dp"/>
     </LinearLayout>
@@ -149,6 +153,7 @@
         android:background="#66CCFF"
         />
     <EditText
+        android:id="@+id/et_Roomproblem"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:background="@null"
@@ -160,11 +165,12 @@
         android:background="#66CCFF"
         />
     <Button
-        android:id="@+id/roomRepairsSumbit"
+        android:id="@+id/btn_roomRepairsSumbit"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:text="提交"
         android:textColor="#FFFFFF"
         android:background="@color/colorBlue"
+        android:onClick="submitRepairs"
         />
 </LinearLayout>

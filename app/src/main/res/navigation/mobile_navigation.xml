@@ -25,7 +25,7 @@
     <fragment
         android:id="@+id/setting"
         android:name="com.example.t1.ui.setting.SettingFragment"
-        android:label="设置"
+        android:label="我的"
         tools:layout="@layout/fragment_setting"
         />
 </navigation>

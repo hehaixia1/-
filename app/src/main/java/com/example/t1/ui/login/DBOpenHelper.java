@@ -1,11 +1,10 @@
-package com.example.t1;
+package com.example.t1.ui.login;
 
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.example.t1.ui.login.User;
 
 import java.util.ArrayList;
 

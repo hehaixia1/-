@@ -7,6 +7,7 @@ import android.view.View;
 import com.example.t1.ui.home.Public_repairs;
 import com.example.t1.ui.home.Records_repairs;
 import com.example.t1.ui.home.Room_repairs;
+import com.example.t1.ui.setting.AllRecords;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -46,6 +47,11 @@ public class MainActivity extends AppCompatActivity {
     //我要报事响应
     public void records(View view) {
         Intent intent = new Intent(MainActivity.this, Records_repairs.class);
+        startActivity(intent);
+    }
+    //报修记录响应
+    public void allRecords(View view){
+        Intent intent = new Intent(MainActivity.this, AllRecords.class);
         startActivity(intent);
     }
 }

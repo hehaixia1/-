@@ -10,15 +10,13 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="3"
-        android:orientation="vertical"
-        >
-        <!--     报修-->
+        android:orientation="vertical">
+        <!--     缴费-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="155dp"
-            android:background="#FFFFFF"
-            android:orientation="vertical"
-            >
+            android:orientation="vertical">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
@@ -39,7 +37,8 @@
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/pay_records" />
+                        android:padding="4dp"
+                        android:src="@drawable/electricity" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -53,133 +52,136 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:layout_gravity="center_horizontal"
-                    android:orientation="vertical"
-                    >
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
                     <ImageView
                         android:id="@+id/water"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/pay_records"
-                        />
+                        android:padding="4dp"
+                        android:src="@drawable/water" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:textSize="14sp"
-                        android:textColor="#8B8B7A"
                         android:text="水费充值"
-                        />
+                        android:textColor="#8B8B7A"
+                        android:textSize="14sp" />
                 </LinearLayout>
                 <!--                气费充值-->
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:layout_gravity="center_horizontal"
-                    android:orientation="vertical"
-                    >
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
                     <ImageView
                         android:id="@+id/qi"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/pay_records"
-                        />
+                        android:padding="4dp"
+                        android:src="@drawable/gas" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:textSize="14sp"
-                        android:textColor="#8B8B7A"
                         android:text="气费充值"
-                        />
+                        android:textColor="#8B8B7A"
+                        android:textSize="14sp" />
                 </LinearLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
-                android:orientation="horizontal"
-                >
+                android:orientation="horizontal">
                 <!--                网费充值-->
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:layout_gravity="center_horizontal"
-                    android:orientation="vertical"
-                    >
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
                     <ImageView
                         android:id="@+id/wangfei"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/pay_records"
-                        />
+                        android:padding="4dp"
+                        android:src="@drawable/internet" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:textSize="14sp"
-                        android:textColor="#8B8B7A"
                         android:text="网费充值"
-                        />
+                        android:textColor="#8B8B7A"
+                        android:textSize="14sp" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:layout_gravity="center_horizontal"
-                    android:orientation="vertical"
-                    >
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/pay_records"
-                        />
+                        android:padding="4dp"
+                        android:src="@drawable/other" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:textSize="14sp"
+                        android:text="其他"
                         android:textColor="#8B8B7A"
-                        />
+                        android:textSize="14sp" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:layout_gravity="center_horizontal"
-                    android:orientation="vertical"
-                    >
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
                     <ImageView
                         android:id="@+id/kongbai"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/pay_records"
-                        />
+                        android:padding="4dp"
+                        android:src="@drawable/add" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:textSize="14sp"
+                        android:text="敬请期待"
                         android:textColor="#8B8B7A"
-                        android:text=" "
-                        />
+                        android:textSize="14sp" />
                 </LinearLayout>
 
             </LinearLayout>
         </LinearLayout>
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_marginTop="20dp"
-            android:layout_height="300dp"
-            android:src="@drawable/person"
-            />
+        <!--        <ImageView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:layout_height="300dp"-->
+        <!--            android:src="@drawable/person"-->
+        <!--            />-->
     </LinearLayout>
 </LinearLayout>
