@@ -14,6 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.t1.R;
+import com.example.t1.ui.login.Login;
 
 public class FillInformation extends AppCompatActivity {
 
@@ -70,6 +71,9 @@ public class FillInformation extends AppCompatActivity {
         long rowId = db.insert("Information",null,values);
         if (rowId!=-1){
             Toast.makeText(this,"提交成功",Toast.LENGTH_SHORT).show();
+            Intent intent2 = new Intent(this, Login.class);
+            startActivity(intent2);
+            finish();
         }
         db.close();
 
