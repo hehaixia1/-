@@ -12,6 +12,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.t1.R;
+import com.example.t1.ui.setting.FillInformation;
 
 public class Sign extends AppCompatActivity implements View.OnClickListener {
     private String realCode;
@@ -64,7 +65,7 @@ public class Sign extends AppCompatActivity implements View.OnClickListener {
                     if (phoneCode.equals(realCode)) {
                         //将用户名和密码加入到数据库中
                         mDBOpenHelper.add(username, password);
-                        Intent intent2 = new Intent(this, Login.class);
+                        Intent intent2 = new Intent(this, FillInformation.class);
                         startActivity(intent2);
                         finish();
                         Toast.makeText(this,  "验证通过，注册成功,请登录。", Toast.LENGTH_SHORT).show();
