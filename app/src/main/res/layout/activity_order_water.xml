@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.home.Room_repairs">
+    <!--    所在楼栋-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="所在楼栋:"
+            android:gravity="center"
+            android:textSize="@dimen/repairsInformation"
+            />
+        <Spinner
+            android:id="@+id/buildings_water"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+    <View  android:layout_height="1px"
+        android:layout_width="match_parent"
+        android:background="#66CCFF"
+        />
+    <!--    所在楼层-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="所在楼层:"
+            android:gravity="center"
+            android:textSize="@dimen/repairsInformation"
+            />
+        <Spinner
+            android:id="@+id/floors_water"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+    <View  android:layout_height="1px"
+        android:layout_width="match_parent"
+        android:background="#66CCFF"
+        />
+    <!--    所在房间-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="所在房间:"
+            android:gravity="center"
+            android:textSize="@dimen/repairsInformation"
+            />
+        <EditText
+            android:id="@+id/et_rooms_water"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            />
+    </LinearLayout>
+    <View  android:layout_height="1px"
+        android:layout_width="match_parent"
+        android:background="#66CCFF"
+        />
+    <!--    联系人-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="联系人："
+            android:gravity="center"
+            android:textSize="@dimen/repairsInformation"
+            />
+        <EditText
+            android:id="@+id/et_userName_water"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            />
+    </LinearLayout>
+    <View  android:layout_height="1px"
+        android:layout_width="match_parent"
+        android:background="#66CCFF"
+        />
+    <!--    联系电话-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="联系电话："
+            android:gravity="center"
+            android:textSize="@dimen/repairsInformation"
+            />
+        <EditText
+            android:id="@+id/et_phoneNumber_water"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            />
+    </LinearLayout>
+    <View  android:layout_height="1px"
+        android:layout_width="match_parent"
+        android:background="#66CCFF"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="您需要的桶装水的数量"
+        android:textColor="#66CCFF"
+        android:gravity="center"
+        android:textSize="@dimen/repairsInformation"
+        />
+    <View  android:layout_height="1px"
+        android:layout_width="match_parent"
+        android:background="#66CCFF"
+        />
+    <!--    数量-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="数量:"
+            android:gravity="center"
+            android:textSize="@dimen/repairsInformation"
+            />
+        <Spinner
+            android:id="@+id/amount_water"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+    <View  android:layout_height="1px"
+        android:layout_width="match_parent"
+        android:background="#66CCFF"
+        />
+    <Button
+        android:id="@+id/btn_orderWater"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="提交"
+        android:textColor="#FFFFFF"
+        android:background="@color/colorBlue"
+        android:layout_marginTop="90dp"
+        />
+</LinearLayout>

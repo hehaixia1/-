@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.setting.About">
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/manager"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        />
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:text="寝室管理系统"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:layout_marginTop="80dp"
+        >
+
+        <TextView
+
+            android:layout_width="355dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="4dp"
+            android:gravity="center_vertical"
+            android:text="《注册业务》" />
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/right"
+            android:padding="5dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        >
+        <TextView
+            android:layout_width="355dp"
+            android:layout_height="40dp"
+            android:text="《用户协议和隐私政策》"
+            android:layout_marginLeft="4dp"
+            android:gravity="center_vertical"
+            />
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/right"
+            android:padding="5dp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="290dp"
+        android:gravity="center"
+        android:text="重庆师范大学17级软件工程何海侠等人  版权所有"
+        android:textColor="#35A9D0"
+        />
+
+</LinearLayout>

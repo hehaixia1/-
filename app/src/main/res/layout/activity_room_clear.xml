@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.home.Room_clear">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:text="给出您的建议"
+        android:gravity="center_vertical"
+        />
+    <View  android:layout_height="1px"
+        android:layout_width="match_parent"
+        android:background="#66CCFF"
+        />
+    <EditText
+        android:id="@+id/et_suggestion"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:hint="请输入你您宝贵的建议"
+        android:textSize="20sp"
+        android:gravity="top"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        />
+    <View  android:layout_height="1px"
+        android:layout_width="match_parent"
+        android:background="#66CCFF"
+        />
+    <Button
+        android:id="@+id/btn_submit_clear"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="提交"
+        android:textColor="#FFFFFF"
+        android:background="@color/colorBlue"
+        android:layout_marginTop="90dp"
+        />
+
+</LinearLayout>

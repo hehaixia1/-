@@ -125,6 +125,7 @@
                         android:layout_gravity="center_horizontal"
                         android:src="@drawable/room_clear"
                         android:padding="4dp"
+                        android:onClick="roomClearShow"
                         />
                     <TextView
                         android:layout_width="wrap_content"
@@ -135,7 +136,7 @@
                         android:text="公寓清洁"
                         />
                 </LinearLayout>
-                <!--                我要报事-->
+                <!--                我的报修-->
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -150,6 +151,7 @@
                         android:layout_gravity="center_horizontal"
                         android:src="@drawable/records"
                         android:padding="4dp"
+                        android:onClick="allRecords"
                         />
                     <TextView
                         android:layout_width="wrap_content"
@@ -187,10 +189,10 @@
             </LinearLayout>
         </LinearLayout>
 
-<!--        <ImageView-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="194dp"-->
-<!--            android:src="@drawable/repairs" />-->
+        <!--        <ImageView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="194dp"-->
+        <!--            android:src="@drawable/repairs" />-->
     </LinearLayout>
 
 </LinearLayout>

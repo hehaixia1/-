@@ -6,6 +6,66 @@
     <!--    报修记录-->
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="150dp"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="38dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="55dp"
+                android:src="@drawable/person"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                >
+                <TextView
+                    android:id="@+id/tv_userName_show"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:gravity="center_vertical"
+                    android:text="何海侠"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="电话："
+                        />
+                    <TextView
+                        android:id="@+id/tv_phoneNumber_show"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:text="15320217230"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="40dp"
         android:orientation="horizontal"
         android:background="#FFFFFF"
@@ -29,6 +89,7 @@
             android:layout_height="match_parent"
             android:padding="4dp"
             android:src="@drawable/right"
+            android:onClick="allRecords"
             />
     </LinearLayout>
     <!--    充值记录-->
@@ -75,6 +136,7 @@
             android:padding="6dp"
             />
         <TextView
+            android:id="@+id/tv_fillInformation"
             android:layout_width="315dp"
             android:layout_height="match_parent"
             android:text=" 完善资料"
@@ -82,19 +144,21 @@
             android:textSize="16sp"
             android:gravity="center_vertical"
             android:background="#FFFFFF"
+            android:onClick="fillInformation"
             />
         <ImageView
             android:layout_width="35dp"
             android:layout_height="match_parent"
             android:src="@drawable/right"
             android:padding="4dp"
+            android:onClick="fillInformation"
             />
     </LinearLayout>
     <!--    关于-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         android:orientation="horizontal"
         android:background="#FFFFFF"
         >
@@ -105,6 +169,7 @@
             android:padding="6dp"
             />
         <TextView
+            android:id="@+id/tv_about"
             android:layout_width="315dp"
             android:layout_height="match_parent"
             android:text=" 关于"
@@ -112,12 +177,14 @@
             android:textSize="16sp"
             android:background="#FFFFFF"
             android:gravity="center_vertical"
+            android:onClick="aboutApp"
             />
         <ImageView
             android:layout_width="35dp"
             android:layout_height="match_parent"
             android:src="@drawable/right"
             android:padding="4dp"
+            android:onClick="aboutApp"
             />
     </LinearLayout>
     <!--    客服电话-->
@@ -135,6 +202,7 @@
             android:padding="6dp"
             />
         <TextView
+            android:id="@+id/tv_phone"
             android:layout_width="315dp"
             android:layout_height="match_parent"
             android:text=" 客服电话"
@@ -142,12 +210,14 @@
             android:textSize="16sp"
             android:background="#FFFFFF"
             android:gravity="center_vertical"
+            android:onClick="callPhone"
             />
         <ImageView
             android:layout_width="35dp"
             android:layout_height="match_parent"
             android:src="@drawable/right"
             android:padding="4dp"
+            android:onClick="callPhone"
             />
     </LinearLayout>
     <!--    设置-->
@@ -165,6 +235,7 @@
             android:padding="6dp"
             />
         <TextView
+            android:id="@+id/tv_setting"
             android:layout_width="315dp"
             android:layout_height="match_parent"
             android:text=" 设置"
@@ -172,12 +243,14 @@
             android:textSize="16sp"
             android:background="#FFFFFF"
             android:gravity="center_vertical"
+            android:onClick="settings"
             />
         <ImageView
             android:layout_width="35dp"
             android:layout_height="match_parent"
             android:src="@drawable/right"
             android:padding="4dp"
+            android:onClick="settings"
             />
     </LinearLayout>
 </LinearLayout>
